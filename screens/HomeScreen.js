@@ -64,7 +64,7 @@ export default function HomeScreen({ navigation }) {
     >
       <Text style={styles.postTitle}>{item.title}</Text>
       <Text style={styles.postMeta}>
-        {item.region} · 익명 · {timeAgo(item.createdAt)}
+        {item.region} · 비머 · {timeAgo(item.createdAt)}
       </Text>
     </TouchableOpacity>
   );

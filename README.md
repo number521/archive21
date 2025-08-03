@@ -4,7 +4,7 @@ Beeam은 React Native와 Firebase Firestore로 구축된 간단하고 익명성�
 
 ## 🌟 주요 기능
 
-- **익명 게시글 작성**: 모든 게시글과 댓글은 익명으로 작성됩니다
+- **비머 게시글 작성**: 모든 게시글과 댓글은 "비머"로 작성됩니다
 - **지역별 필터링**: 17개 지역별로 게시글을 필터링할 수 있습니다
 - **실시간 업데이트**: Firebase Firestore를 통한 실시간 데이터 동기화
 - **댓글 시스템**: 각 게시글에 댓글을 작성할 수 있습니다
@@ -42,7 +42,7 @@ Beeam은 React Native와 Firebase Firestore로 구축된 간단하고 익명성�
       └─ comments (서브컬렉션)
           └─ <commentId> (문서)
               • text: string (댓글 내용)
-              • user: string ("익명")
+              • user: string ("비머")
               • createdAt: timestamp
 ```
 
@@ -111,7 +111,7 @@ JavaScript Date 객체를 한국어 상대 시간으로 변환:
 
 ## 🔒 보안 고려사항
 
-- **익명성**: 모든 사용자는 "익명"으로 표시
+- **익명성**: 모든 사용자는 "비머"로 표시
 - **데이터 검증**: 클라이언트 측 입력 검증 구현
 - **Firestore 보안 규칙**: 적절한 보안 규칙 설정 권장
 

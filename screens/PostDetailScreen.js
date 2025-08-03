@@ -94,7 +94,7 @@ export default function PostDetailScreen({ route }) {
     try {
       await addDoc(collection(db, 'posts', postId, 'comments'), {
         text: commentText.trim(),
-        user: '익명',
+        user: '비머',
         createdAt: serverTimestamp(),
       });
 
@@ -120,7 +120,7 @@ export default function PostDetailScreen({ route }) {
     <View style={styles.postContainer}>
       <Text style={styles.postTitle}>{post?.title}</Text>
       <Text style={styles.postMeta}>
-        {post?.region} · 익명 · {post ? timeAgo(post.createdAt) : ''}
+        {post?.region} · 비머 · {post ? timeAgo(post.createdAt) : ''}
       </Text>
       <Text style={styles.postContent}>{post?.content}</Text>
       <View style={styles.divider} />

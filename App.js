@@ -42,7 +42,7 @@ export default function App() {
         <Stack.Screen 
           name="PostDetail" 
           component={PostDetailScreen} 
-          options={{ title: '상세보기' }} 
+          options={{ headerShown: false }} 
         />
       </Stack.Navigator>
     </NavigationContainer>
